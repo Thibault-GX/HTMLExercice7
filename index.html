@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Le p'tit formulaire</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <form action="/Informations-commande" method="post">
+    <fieldset class="identité">
+      <legend class="identité">Votre identité</legend>
+      <div>
+        <label for="name">1. Nom :</label>
+        <input type="text" placeholder="Nom" id="name" name="user_name">
+      </div>
+      <div>
+        <label for="firstname">2. Prénom :</label>
+        <input type="text" placeholder="Prénom" id="firstname" name="user_firstname">
+      </div>
+      <div>
+        <label for="email">3. Adresse e-mail :</label>
+        <input type="email" placeholder="e-mail" id="email" name="user_email">
+      </div>
+    </fieldset>
+    <div>
+      <fieldset class="adresse">
+        <legend class="adresse">Adresse de livraison</legend>
+        <div>
+          <label for="address">1. Adresse :</label>
+          <textarea  cols="20" rows="4" id="address" name="user_address"></textarea>
+        </div>
+        <div>
+          <label for="zip_code">2. Code postal :</label>
+          <input type="text" placeholder="Code postal" id="zip_code" name="user_zip-code">
+        </div>
+        <div>
+          <label for="town">3. Ville :</label>
+          <input type="text" placeholder="Ville" id="town" name="user_town">
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset class="paiement">
+        <legend class="paiement">Informations de règlement</legend>
+        <div>
+          1. Type de carte
+          <br>
+          <input type="radio" name="CB_type" id="type_1" value="VISA">
+          <label for="type_1">VISA</label>
+          <br>
+          <input type="radio" name="CB_type" id="type_2" value="Mastercard">
+          <label for="type_2">Mastercard</label>
+        </div>
+        <div>
+          <label for="CB_number">2. Numéro de carte :</label>
+          <input type="text" placeholder="Numéro de carte" id="CB_number" name="CB_number">
+        </div>
+        <div>
+          <label for="CB_security">3. Code de sécurité :</label>
+          <input type="text" placeholder="Code de sécurité" id="CB_security" name="CB_security">
+        </div>
+        <div>
+          <label for="owner_name">4. Nom du titulaire :</label>
+          <input type="text" placeholder="Nom du titulaire" id="owner_name" name="owner_name">
+        </div>
+      </fieldset>
+    </div>
+    <button type="submit">J'achète !</button>
+  </form>
+</body>
+</html>
